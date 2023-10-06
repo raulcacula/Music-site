@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <header>
+        <div class="logo-header">
+            <h1><i class="fa-solid fa-music"></i>Music</h1>
+        </div>
+        <div class="menu-container" id="menu" onclick="MenuShow()">
+           <p> <i class="fa-solid fa-bars-staggered"></i></p>
+        </div>
+        <ul class="links-container">
+            <li>
+                <a id="BaixarA" href="#baixar">Baixar</a>
+            </li>
+            <li>
+                <a href="#player">musicas</a>
+            </li>
+            <li>
+                <a href="#estilos">estilos</a>
+            </li>
+            <li>
+                <a href="#conta">Criar</a>
+            </li>
+        </ul>
+    </header>
+    <section class="inicio">
+        <div class="inicio-desktop">
+        <img src="https://macmagazine.com.br/wp-content/uploads/2022/02/18-compartilhar-Spotify-stories-2.png" data-speed="-5" class="layer">
+        <img src="https://macmagazine.com.br/wp-content/uploads/2022/02/18-compartilhar-Spotify-stories-2.png" data-speed="5" class="layer">
+        <img src="https://macmagazine.com.br/wp-content/uploads/2022/02/18-compartilhar-Spotify-stories-2.png" data-speed="2" class="layer">
+        <img src="https://macmagazine.com.br/wp-content/uploads/2022/02/18-compartilhar-Spotify-stories-2.png" data-speed="6" class="layer">
+        <img src="https://macmagazine.com.br/wp-content/uploads/2022/02/18-compartilhar-Spotify-stories-2.png" data-speed="8" class="layer">
+        <img src="https://macmagazine.com.br/wp-content/uploads/2022/02/18-compartilhar-Spotify-stories-2.png" data-speed="-2" class="layer">
+        <img src="https://macmagazine.com.br/wp-content/uploads/2022/02/18-compartilhar-Spotify-stories-2.png" data-speed="4" class="layer">
+        <img src="https://macmagazine.com.br/wp-content/uploads/2022/02/18-compartilhar-Spotify-stories-2.png" data-speed="-9" class="layer">
+        </div>
+        <div class="inicio-mobile">
+            <img src="https://macmagazine.com.br/wp-content/uploads/2022/02/18-compartilhar-Spotify-stories-2.png">
+        </div>
+        <h1 class="layer" data-speed="6">Ouça as melhores musicas
+        </h1>
+    </section>
+
+    <div class="titulo-hiphop">
+        <a href="">Para Voçê</a>
+        <!--<input type="date" placeholder="data">-->
+    </div>
+
+    <div class="player" id="player">
+        <section class="container-music container-music">
+        <div class="imgbox">
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/66/aa/d4/66aad4e5-11b7-f488-08f9-e72617018b64/1963621570972_cover.jpg/1200x1200bf-60.jpg" alt="">
+        </div>
+        <h1>Fluxxwave</h1>
+
+        <audio id="audio" >
+            <source src="/inicio/audio/Fluxxwave.mp3" type="">
+        </audio>
+
+        <button id="playPause" onclick="playPause()"><p><i class="fa-solid fa-play"></i></p></button>
+
+        <div class="progress-bar" id="progress_bar">
+            <div class="progress" id="progress"></div>
+        </div>
+        
+        <div class="time">
+            <span>1</span>
+            <span>3:00</span>
+        </div>
+        </section>
+<!--MUSIC 2 -->
+          <section class="container-music container-music2">
+        <div class="imgbox">
+            <img src="https://musicvibes.net/wp-content/uploads/2023/08/mp3-dennis-ft-mc-kevin-o-chris-%E2%80%93-ta-ok-Musicvibes.net_.jpg" alt="">
+        </div>
+        <h1>Ta ok</h1>
+
+        <audio  id="audio2" >
+            <source src="/inicio/audio/Dennis e Kevin O Chris - TÁ OK (Clipe Oficial).mp3" type="">
+        </audio>
+
+        <button  id="playPause2" onclick="playPause2()"><p><i class="fa-solid fa-play"></i></p></button>
+
+        <div class="progress-bar " id="progress_bar2">
+            <div class="progress" id="progress2"></div>
+        </div>
+        
+        <div class="time">
+            <span>1</span>
+            <span>1:58</span>
+        </div>
+        </section>
+      
+        <!--MUSIC 3 -->
+        <section class="container-music container-music3">
+            <div class="imgbox">
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/52/ec/31/52ec3117-f90e-36b7-26a8-4097916dcbcb/197189809996.jpg/1200x1200bb.jpg" alt="">
+            </div>
+            <h1>Montagem - pr funk</h1>
+    
+            <audio  id="audio3" >
+                <source src="/inicio/audio/S3BZS - MONTAGEM - PR FUNK.mp3" type="">
+            </audio>
+    
+            <button  id="playPause3" onclick="playPause3()"><p><i class="fa-solid fa-play"></i></p></button>
+    
+            <div class="progress-bar " id="progress_bar3">
+                <div class="progress" id="progress3"></div>
+            </div>
+            
+            <div class="time">
+                <span>1</span>
+                <span>1:01</span>
+            </div>
+            </section>
+          
+                    <!--MUSIC 3 -->
+        <section class="container-music container-music4">
+            <div class="imgbox">
+                <img src="https://i1.sndcdn.com/artworks-bakmnHzRowrt-0-t500x500.jpg"  alt="">
+            </div>
+            <h1>Lets go 4</h1>
+    
+            <audio  id="audio4" >
+                <source src="/inicio/audio/MC IG - Let’s Go 4 (DJ GBR) Áudio Completo.mp3" type="">
+            </audio>
+    
+            <button  id="playPause4" onclick="playPause4()"><p><i class="fa-solid fa-play"></i></p></button>
+    
+            <div class="progress-bar " id="progress_bar4">
+                <div class="progress" id="progress4"></div>
+            </div>
+            
+            <div class="time">
+                <span>1</span>
+                <span>8:33</span>
+            </div>
+            </section>
+    </div>   
+
+    <div class="back-fluxx">
+        <div class="container-fluxx">
+             <div class="fluxx-img">
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/a8/b6/43/a8b64309-9137-cca5-ae65-43c27b67429e/1963621478995_cover.jpg/1200x1200bf-60.jpg" alt="">
+                <div class="fluxx-texto">
+                    <h1>Fluxxwave (lay With me)</h1>
+                    <p>Ouça a verção remixada de Fluxxwave</p>
+                    <a onclick="premium()" id="ouvir">Ouvir</a>
+                </div>
+             </div>
+             <div class="aviso">
+                <h1>Assine agora o Premium!</h1>
+                <a href="">Criar conta</a>
+                <br>
+                <p onclick="premiumX()" id="fechar"><i class="fa-solid fa-xmark"></i></p>
+            </div>
+        </div>
+        
+     <section class="fluxx-vercao">
+        <div class="container-slowed">
+            <h1>Verção Slowed</h1>
+            <p><i class="fa-solid fa-play"></i></p>
+        </div>
+        <div class="container-slowed container-speed">
+            <h1>Verção SpeedUp</h1>
+            <p><i class="fa-solid fa-play"></i></p>
+        </div>
+        <div class="container-slowed">
+            <h1>Verção Normal</h1>
+            <p><i class="fa-solid fa-play"></i></p>
+        </div>
+     </section>
+    </div>
+
+    <main class="card">
+        <section class="card-opc">
+            <div class="card-img card-img-1">
+                <img src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" alt="">
+            </div>
+            <h1>Salve suas melhores  musicas</h1>
+        </section>
+        <section class="card-opc card-opc-2">
+            <div class="card-img">
+                <img src="https://cdn-icons-png.flaticon.com/512/6398/6398977.png" alt="">
+            </div>
+            <h1>Monte sua playlist</h1>
+        </section>
+        <section class="card-opc ">
+            <div class="card-img">
+                <img src="https://cdn-icons-png.flaticon.com/512/8014/8014930.png" alt="">
+            </div>
+            <h1>Todo estilo de musica</h1>
+        </section>
+    </main>
+
+
+    <div class="titulo-estilos" id="estilos">
+        <h1>Qualquer estilo de musicas</h1>
+    </div>
+
+     <main class="estilos">
+        <section class="card-estilos">
+            <h1>Rock</h1>
+            <div class="estilo-img">
+                <img src="https://cdn-icons-png.flaticon.com/512/4788/4788725.png" alt="">
+            </div>
+        </section>
+        <section class="card-estilos card-estilos-2">
+            <h1>Pop</h1>
+            <div class="estilo-img">
+                <img src="https://cdn-icons-png.flaticon.com/512/4379/4379033.png" alt="">
+            </div>
+        </section>
+        <section class="card-estilos card-estilos-3">
+            <h1>HipHop</h1>
+            <div class="estilo-img">
+                <img src="https://static.thenounproject.com/png/146452-200.png" alt="">
+            </div>
+        </section>
+        <section class="card-estilos card-estilos-4">
+            <h1>Funk</h1>
+            <div class="estilo-img">
+                <img src="https://static.thenounproject.com/png/882405-200.png" alt="">
+            </div>
+        </section>
+        <section class="card-estilos card-estilos-5">
+            <h1>Phonk</h1>
+            <div class="estilo-img">
+                <img src="https://static.thenounproject.com/png/4303709-200.png" alt="">
+            </div>
+        </section>
+        <section class="card-estilos card-estilos-6">
+            <h1>Cristã</h1>
+            <div class="estilo-img">
+                <img src="https://cdn-icons-png.flaticon.com/512/249/249653.png" alt="">
+            </div>
+        </section>
+        <section class="card-estilos card-estilos-7">
+            <h1>Sertanejo</h1>
+            <div class="estilo-img">
+                <img src="https://estaiadachoperia.com.br/imagens/icons/sertanejo.png" alt="">
+            </div>
+        </section>
+        <section class="card-estilos card-estilos-8">
+            <h1>Eletronica</h1>
+            <div class="estilo-img">
+                <img src="https://cdn-icons-png.flaticon.com/512/331/331035.png" alt="">
+            </div>
+        </section>
+        <section class="card-estilos card-estilos-9">
+            <h1>Jazz</h1>
+            <div class="estilo-img">
+                <img src="https://cdn-icons-png.flaticon.com/512/525/525670.png" alt="">
+            </div>
+        </section>
+        <section class="card-estilos card-estilos-10">
+            <h1>Trilha
+                <br>sonora</h1>
+            <div class="estilo-img">
+                <img src="https://cdn-icons-png.flaticon.com/512/2389/2389613.png" alt="">
+            </div>
+        </section>
+        <section class="card-estilos card-estilos-11">
+            <h1>Samba e
+                <br>Pagode</h1>
+            <div class="estilo-img">
+                <img src="https://cdn-icons-png.flaticon.com/512/7113/7113194.png" alt="">
+            </div>
+        </section>
+        <section class="card-estilos card-estilos-11">
+            <h1>Festa</h1>
+            <div class="estilo-img">
+                <img src="https://cdn.icon-icons.com/icons2/2767/PNG/512/new_year_party_confetti_icon_176601.png" alt="">
+            </div>
+        </section>
+     </main>
+
+     <div class="titulo-premium">
+        <h1>Beneficios do Premium</h1>
+     </div>
+
+     <main class="card-premium">
+        <section class="premium">
+            <div class="premium-img">
+                <img src="https://user-images.githubusercontent.com/12462454/53268582-2eb1d200-36ef-11e9-9259-18dce6886963.png" alt="">
+            </div>
+            <h1>Sem anuncios</h1>
+        </section>
+        <section class="premium">
+            <div class="premium-img">
+                <img src="https://cdn-icons-png.flaticon.com/512/820/820508.png" alt="">
+            </div>
+            <h1>Audio Excelente</h1>
+        </section>
+        <section class="premium">
+            <div class="premium-img">
+                <img src="https://cdn-icons-png.flaticon.com/512/7513/7513553.png" alt="">
+            </div>
+            <h1>Qualidade maxima</h1>
+        </section>
+        <section class="premium">
+            <div class="premium-img">
+                <img src="https://cdn-icons-png.flaticon.com/512/63/63596.png" alt="">
+            </div>
+            <h1>Ouça offline</h1>
+        </section>
+
+        <section class="premium">
+            <div class="premium-img">
+                <img src="https://user-images.githubusercontent.com/12462454/53268582-2eb1d200-36ef-11e9-9259-18dce6886963.png" alt="">
+            </div>
+            <h1>Sem anuncios</h1>
+        </section>
+        <section class="premium">
+            <div class="premium-img">
+                <img src="https://cdn-icons-png.flaticon.com/512/820/820508.png" alt="">
+            </div>
+            <h1>Audio Excelente</h1>
+        </section>
+        <section class="premium">
+            <div class="premium-img">
+                <img src="https://cdn-icons-png.flaticon.com/512/7513/7513553.png" alt="">
+            </div>
+            <h1>Qualidade maxima</h1>
+        </section>
+        <section class="premium">
+            <div class="premium-img">
+                <img src="https://cdn-icons-png.flaticon.com/512/63/63596.png" alt="">
+            </div>
+            <h1>Ouça offline</h1>
+        </section>
+     </main>
+
+     <div class="premium">
+        <div class="preco-premium">
+            <h1>Por apenas</h1>
+            <span>R$ 19,90 </span>
+            <p>por mês</p>
+            <a href="">Criar conta</a>
+        </div>
+     </div>
+
+     <section class="form-conta" id="conta">
+     <div class="conta">
+        <form>
+            <input id="email" type="email" placeholder="Digite seu email">
+            <br>
+            <input id="senha" type="password" placeholder="digite a senha">
+            <br>
+            <button id="btn">Enviar</button>
+            <div class="processo-form">
+                <div class="processo"></div>
+            </div>
+        </form>
+        <div class="progresso-form">
+            <div class="progress-form"></div>
+            <p>1/3</p>
+        </div>
+        <div class="log-conta">
+            <a href="">Google</a>
+        </div>
+     </div>
+     </section>
+    
+
+ <section class="slider">
+    <div class="slider-img">
+        <video src="/inicio/audio/spotify.video.mp4"
+        muted
+        loop
+        autoplay></video>
+    </div>
+    <div class="content">
+        <h1>Musica
+            é Conexão
+        </h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore veniam ratione voluptates doloribus quasi. Doloribus vero, quia cupiditate quo sunt aliquid aut dignissimos dolore modi laboriosam rem, perferendis facilis ex.</p>
+    </div>
+ </section>
+
+
+ <footer>
+    <div class="container-footer">
+        <div class="link-1">
+            <h1>Açoes</h1>
+            <a href="#conta">Criar conta</a>
+            <br>
+            <a href="">Baixar</a>
+        </div>
+        <div class="link-1">
+            <h1>Conectar</h1>
+            <a href="">blog</a>
+            <br>
+            <a href="">dd</a>
+        </div>
+        <div class="link-1">
+            <h1>Music test</h1>
+            <a href="">Fluxxwave</a>
+            <br>
+            <a href="">Lets go 4</a>
+        </div>
+    </div>
+    <div class="sociais">
+        <p>&copy;Raulcacula</p>
+        <a href="https://github.com/raulcacula/raulcacula"><i class="fa-brands fa-github"></i></a>
+        <a href="https://github.com/raulcacula/raulcacula"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+ </footer>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+
+<script src="music.js"></script>
+    <script src="https://kit.fontawesome.com/43fd509247.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+</body>
+</html>
